@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-
+    <link rel="stylesheet" href="css/map.css">
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/map.css">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -20,9 +19,10 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
+    <script src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"></script>
+    <script src="js/geo.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/map.js"></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyB16sGmIekuGIvYOfNoW9T44377IU2d2Es&sensor=true"></script>
+
 
         async defer>
      </script>
@@ -31,12 +31,12 @@
 
     <ion-pane>
       <ion-header-bar class="bar-dark">
-        <h1 class="title">Test Map</h1>
+        <h1 class="title">Geo Map Tester</h1>
       </ion-header-bar>
 
       <!--Content-->
       <ion-content>
-        <div id="map" data-tab-diabled="true"></div>
+        <div id="map" data-tap-disabled="true"></div>
       </ion-content>
       <!--Content-->
 
